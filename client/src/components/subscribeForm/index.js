@@ -4,7 +4,7 @@ export default function SubscribeForm() {
     const [status, setStatus] = useState<string | null>(null)
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
-    const FORM_URL = process.env.FORM_URL;
+    const FORM_URL = process.env.NEXT_PUBLIC_FORM_URL;
 
     const handleSubmit = async(event) => {
         event.preventDefault();
