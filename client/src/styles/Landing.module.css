@@ -12,5 +12,26 @@
 }
 
 .landing__msm_logo {
-    padding: 30px;
+    padding: 25px;
+    animation: rotate 4s linear infinite;
 }
+
+@keyframes rotate {
+    from {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+    to {
+      transform: rotate3d(0, 1, 0, 360deg);
+    }
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    .landing__logo {
+        font-size: 2.5em;
+    }
+    .landing__msm_logo {
+        width: 90px;
+        height: 180px;
+    }
+  }
