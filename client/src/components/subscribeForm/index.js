@@ -4,8 +4,7 @@ export default function SubscribeForm() {
     const [status, setStatus] = useState<string | null>(null)
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
-    const FORM_URL = "https://app.convertkit.com/forms/4928472/subscriptions"
-    const API_ENDPOINT = "https://api.convertkit.com/v3/forms/4928472/subscribe"
+    const FORM_URL = process.env.FORM_URL;
 
     const handleSubmit = async(event) => {
         event.preventDefault();
