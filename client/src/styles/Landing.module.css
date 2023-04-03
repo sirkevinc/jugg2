@@ -11,6 +11,11 @@
     font-size: 3.5em;
 }
 
+.landing__video {
+  height: 500px;
+  width: 500px;
+}
+
 .landing__msm_logo {
     padding: 25px;
     animation: rotate 4s linear infinite;

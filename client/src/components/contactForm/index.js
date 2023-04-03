@@ -17,10 +17,10 @@ export default function ContactForm() {
         <label htmlFor="message">Your Message</label>
         <textarea id="message" name="message" />
         <ValidationError prefix="Message" field="message" errors={state.errors} />
+        <ValidationError errors={state.errors} />
         <button type="submit" disabled={state.submitting}>
           Submit
         </button>
-        <ValidationError errors={state.errors} />
       </form>
     </div>
   );

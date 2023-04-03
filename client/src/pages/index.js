@@ -15,13 +15,16 @@ export default function LandingPage() {
       </Head>
       <main className={styles.landing__container}>
         <span className={styles.landing__logo}>Juggarnaut 151</span>
-        <Image 
+        <video autoPlay loop className={styles.landing__video}>
+          <source src="/assets/videos/360_white_backdrop_animation.mp4" />
+        </video>
+        {/* <Image 
           src={"/assets/msm_logo.jpg"} 
           width={110} 
           height={210}
           alt="MSM Logo"
           className={styles.landing__msm_logo}
-        />
+        /> */}
         <Link href="/home">Enter</Link>
       </main>
     </>

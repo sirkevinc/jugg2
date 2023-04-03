@@ -21,6 +21,30 @@ main {
   padding: 10px;
 }
 
+.rotating_msm_logo {
+  position: absolute;
+  right: 0;
+  padding: 25px;
+  margin-top: 10px;
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+@media (max-width: 780px) {
+  .app__container main {
+      margin: 50px 0;
+  }
+}
+
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,

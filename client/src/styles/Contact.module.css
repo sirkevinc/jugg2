@@ -1,6 +1,16 @@
+.contact__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.contact__container h1 {
+    font-size: 1.25rem;
+}
+
 .form__container {
-    border: 1px solid black;
-    width: 80%;
+    /* border: 1px solid black; */
+    width: 100%;
 }
 
 .form__container form {
@@ -8,4 +18,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+}
+.form__container label {
+    padding: 10px;
+}
+
+.form__container input {
+    width: 20%;
+}
+
+.form__container textarea {
+    height: 200px;
+    width: 30%;
+    resize: none;
+}
+
+.form__container button {
+    background-color: black;
+    font-family: inherit;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    width: 175px;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
 }

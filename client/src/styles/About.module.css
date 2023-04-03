@@ -18,6 +18,11 @@
     gap: 20px;
 }
 
+.about__content img {
+    /* width: 50%; */
+    /* height: 50%; */
+}
+
 .about__content_text {
-    width: 50%;
+    min-width: 50%;
 }
