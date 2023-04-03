@@ -1,15 +1,20 @@
 import Navbar from "./navbar"
 import Footer from "./footer"
-import Sidebar from "./sidebar"
 
 import Image from "next/image"
-// import styles from "../styles/Landing.module.css"
 
 export default function Layout({ children }) {
   return (
     <>
       <Navbar />
-      {/* <Sidebar /> */}
+      <div className="logo__container">
+        <Image
+          className="logo"
+          src="/assets/images/juggarnaut_logo.jpg"
+          height={150}
+          width={200}
+          />
+      </div>
       <main>{children}</main>
       <Image 
           src={"/assets/msm_logo.jpg"} 

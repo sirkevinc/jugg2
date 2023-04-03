@@ -13,12 +13,12 @@ export default function Hamburger({ status, setToggle }) {
                 </div>
                 :
                 <div className={styles.hamburger__sidebar}>
-                    <Menu>
+                    {/* <Menu>
                         <li><Link href="/home" className={styles.nav__link}>Home</Link></li>
                         <li><Link href="/works" className={styles.nav__link}>Works</Link></li>
                         <li><Link href="/about" className={styles.nav__link}>About</Link></li>
                         <li><Link href="contact" className={styles.nav__link}>Contact</Link></li>
-                    </Menu>
+                    </Menu> */}
                 </div>
             }
         </div>

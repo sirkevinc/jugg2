@@ -4,7 +4,7 @@ import Hamburger from "../hamburger"
 import { useState, useEffect } from "react"
 
 import useWindowDimensions from "../../../util/useWindowDimensions"
-import { slide as Menu } from 'react-burger-menu'
+// import { slide as Menu } from 'react-burger-menu'
 
 export default function Navbar() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -40,12 +40,12 @@ export default function Navbar() {
                 </ul>
                 :
                 <div className={styles.hamburger} onClick={toggleHamburger}>
-                    <Menu>
+                    {/* <Menu>
                         <li><Link href="/home" className={styles.nav__link}>Home</Link></li>
                         <li><Link href="/works" className={styles.nav__link}>Works</Link></li>
                         <li><Link href="/about" className={styles.nav__link}>About</Link></li>
                         <li><Link href="contact" className={styles.nav__link}>Contact</Link></li>
-                    </Menu>
+                    </Menu> */}
                     {/* <Hamburger status={hamburgerOpen} setToggle={setHamburgerOpen}/> */}
                 </div>
             }

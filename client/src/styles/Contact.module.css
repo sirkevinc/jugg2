@@ -1,11 +1,24 @@
 .contact__container {
+    margin-top: 10px;
+}
+.contact__content {
+    margin-top: -75px;
     display: flex;
     width: 100%;
-    flex-direction: column;
+    height: 100vh;
+    flex-direction: row;
     align-items: center;
 }
-.contact__container h1 {
-    font-size: 1.25rem;
+
+.contact__image_wrapper {
+    position: relative;
+    width: 100%;
+    height: 75%;
+}
+
+.image {
+    height: 500px;
+    width: 100px;
 }
 
 .form__container {
@@ -25,12 +38,12 @@
 }
 
 .form__container input {
-    width: 20%;
+    width: 30%;
 }
 
 .form__container textarea {
     height: 200px;
-    width: 30%;
+    width: 75%;
     resize: none;
 }
 

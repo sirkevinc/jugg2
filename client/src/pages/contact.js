@@ -6,13 +6,20 @@ import Image from 'next/image'
 export default function Contact() {
     return (
         <main className={styles.contact__container}>
-            <h1>Contact</h1>
-            <Image 
-              src="/assets/images/subscribe.jpg"
-              width={600}
-              height={400}
-            />
-            <ContactForm />
+            <h1 className="page_header">Contact</h1>
+            <div className={styles.contact__content}>
+              <div className={styles.contact__image_wrapper}>
+              <Image
+                className={styles.image}
+                priority
+                src="/assets/images/subscribe.jpg"
+                fill
+                objectFit="cover"
+                alt="Product collage"
+              />
+              </div>
+              <ContactForm />
+            </div>
         </main>
     )
 }

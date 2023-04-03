@@ -1,18 +1,16 @@
 .works__container {
-    text-align: center;
-}
-
-.works__images {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
     align-items: center;
 }
 
-.works__image {
+.works__wrapper {
     position: relative;
-    padding: 20px;
     width: 100vw;
-    height: 300px;
+    height: 100%;
+}
+
+.image {
+    min-width: 100%;
 }

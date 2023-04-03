@@ -13,28 +13,25 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.home__container}>
-              <div className={styles.home__logo_container}>
+              {/* <div className={styles.home__logo_container}>
                 <Image
                   className={styles.home__logo}
                   src="/assets/images/juggarnaut_logo.jpg"
                   height={150}
                   width={200}
                   />
-              </div>
+              </div> */}
               {/* <h1>Homepage</h1> */}
-              <div className={styles.hero__wrapper}>
-                <div className={styles.hero_image__wrapper}>
-                {/* <Image
-                  priority
-                  src="/assets/images/hero_image.jpg"
-                  layout="fill"
-                  objectFit="cover"
-                  objectPosition="center"
-                  alt="hero image"
-                  /> */}
-                </div>
+              <div className={styles.hero_image__wrapper}>
+                  <Image
+                    className={styles.image}
+                    priority
+                    src="/assets/images/hero_image.jpg"
+                    fill
+                    objectFit="cover"
+                    alt="Product collage"
+                  />
               </div>
-            
             </main>
         </>
     )
