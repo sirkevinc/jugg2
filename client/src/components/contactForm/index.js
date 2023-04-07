@@ -2,10 +2,14 @@ import { useForm, ValidationError } from "@formspree/react";
 import styles from "../../styles/Contact.module.css"
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm("YOUR_FORM_ID");
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM_ID);
 
   if (state.succeeded) {
-    return <p>Thanks for your submission!</p>;
+    return(
+      <div className={styles.form__container}>
+        <p className={styles.form_message}>Thank you for your submission.</p>
+      </div>
+    )
   }
 
   return (

@@ -4,10 +4,12 @@ export default function Footer() {
     return (
         <footer className={styles.footer__container}>
             <span>Juggarnaut 151</span>
-            <span>
-                <img src="/assets/icons8-instagram.svg"/> Test
-                {/* <span>instagram thing</span> */}
-            </span>
+            <a href="https://instagram.com">
+                <img 
+                    src="/assets/icons8-instagram.svg"
+                    alt="Instagram Logo"
+                />
+            </a>
         </footer>
     )
 }

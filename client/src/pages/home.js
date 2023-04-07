@@ -13,15 +13,6 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.home__container}>
-              {/* <div className={styles.home__logo_container}>
-                <Image
-                  className={styles.home__logo}
-                  src="/assets/images/juggarnaut_logo.jpg"
-                  height={150}
-                  width={200}
-                  />
-              </div> */}
-              {/* <h1>Homepage</h1> */}
               <div className={styles.hero_image__wrapper}>
                   <Image
                     className={styles.image}
@@ -31,6 +22,11 @@ export default function Home() {
                     objectFit="cover"
                     alt="Product collage"
                   />
+              </div>
+              <div className={styles.home__bottom_content}>
+                <div>
+                  <p>Test Bottom Content</p>
+                </div>
               </div>
             </main>
         </>

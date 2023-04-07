@@ -60,7 +60,7 @@ main {
 
 @media (max-width: 780px) {
   .app__container main {
-      margin: 50px 0;
+      /* margin: 50px 0; */
   }
 }
 
